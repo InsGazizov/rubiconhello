@@ -1,7 +1,8 @@
 count = 0
-while count < 3:
+while count < 33:
     print("Bye"*3)
     count += 1 
 
-print("end")
-print(" first comit.")
+print("end ")
+print ( 1 + 1)
+
