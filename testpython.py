@@ -15,7 +15,7 @@ while a > 0:
         b += random.randint(0, 50)
         if b > 100:
             b = random.randint(0,50)
-    d = random.randint(0, 100)
+    d = random.randint(0, 100) - b
     a -= d
     # Используем f-строку для корректного вывода
     print(f"#{count}: a = {a}, b = {b}.")
