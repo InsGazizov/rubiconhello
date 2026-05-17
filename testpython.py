@@ -1,17 +1,32 @@
 import time
+import random
 a = 1000
 b = 0
-c = 900
+c = 900 - random.randint(0, 900)
 
+times = 0
+text = " за минуту рандом не выпал меньше нуля и алгоритм закрылся"
+count = 0
 while a > 0:
-    a -= 1
+    count += 1
     if a == c:
         a -= b
     else: 
-        b += 1
-    
+        b += random.randint(0, 50)
+        if b > 100:
+            b = random.randint(0,50)
+    d = random.randint(0, 100)
+    a -= d
     # Используем f-строку для корректного вывода
-    print(f"seconds = {a} b = {b}")
+    print(f"#{count}: a = {a}, b = {b}.")
     time.sleep(1)
+    times +=1 
+    if times > 5:
+        break
+    else:
+        text = ""
+
 
 print()
+print("end and summary time: " + str( times) + text)
+
