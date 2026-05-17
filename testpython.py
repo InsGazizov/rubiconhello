@@ -1,6 +1,6 @@
 import time
 import random
-a = 1000
+a = 3000
 b = 0
 c = 900 - random.randint(0, 900)
 
@@ -19,6 +19,7 @@ while a > 0:
     a -= d
     # Используем f-строку для корректного вывода
     print(f"#{count}: a = {a}, b = {b}.")
+
     time.sleep(1)
     times +=1 
     if times > 90:

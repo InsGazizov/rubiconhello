@@ -1,0 +1,8 @@
+FROM nginx:alpine
+
+WORKDIR /html
+
+COPY ./index.html .
+
+EXPOSE 80
+
