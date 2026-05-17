@@ -21,7 +21,7 @@ while a > 0:
     print(f"#{count}: a = {a}, b = {b}.")
     time.sleep(1)
     times +=1 
-    if times > 5:
+    if times > 90:
         break
     else:
         text = ""
